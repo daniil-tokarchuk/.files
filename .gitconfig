@@ -1,0 +1,52 @@
+[user]
+  email = daniil.v.tokarchuk@gmail.com
+  name = Daniil Tokarchuk
+
+[core]
+  editor = nvim
+[fetch]
+  prune = true
+[push]
+  autoSetupRemote = true
+
+[alias]
+  l = log
+  a = add
+  d = diff
+  f = fetch
+  s = status
+  cl = clone
+  co = checkout
+  cb = checkout -b
+  cd = checkout develop
+  cp = cherry-pick
+
+  c = commit
+  ca = commit --amend
+  can = commit --amend --no-edit
+  canpf = !git commit --amend --no-edit && git push -f
+  acanpf = !git add . && git commit --amend --no-edit && git push -f
+  acan = !git add . && git commit --amend --no-edit
+  aca = !git add . && git commit --amend
+  ac = !git add . && git commit
+
+  p = push
+  pf = push -f
+  pd = push -d # <remote> <branch>
+  pl = pull
+
+  sk = stash -ku
+  sp = stash pop
+  sd = stash drop
+  sl = stash list
+
+  r = restore
+  rs = restore --staged
+
+  ri = rebase -i
+  rc = rebase --continue
+
+  rst = reset --soft
+
+  uiau  = update-index --assume-unchanged
+  uinau = update-index --no-assume-unchanged
