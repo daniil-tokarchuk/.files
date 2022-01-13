@@ -1,0 +1,7 @@
+[default]
+sso_start_url = https://ad-doosanad-1s129xqo6hgkh.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 452295442916
+sso_role_name = FIXME-Developer
+region = us-east-1
+output = json
