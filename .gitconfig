@@ -1,0 +1,55 @@
+[user]
+  email = daniil.v.tokarchuk@gmail.com
+  name = Daniil Tokarchuk
+
+[core]
+  editor = nvim
+
+[diff]
+	tool = nvimdiff
+[merge]
+	tool = nvim
+[mergetool "nvim"]
+  cmd = nvim -d $LOCAL $REMOTE
+
+[alias]
+  ch = checkout
+  chm = checkout master
+
+  a = add .
+  c = !git add . && git commit
+  ca = !git add . && git commit --amend
+  can = !git add . && git commit --amend --no-edit
+  canpf = !git add . && git commit --amend --no-edit && git push -f
+  capf = !git add . && git commit --amend && git push -f
+  cp = !git add . && git commit && git push 
+  
+  ph = push origin
+  phf = push -f origin
+  pl = pull origin
+
+  l = log
+  i = init
+  f = fetch
+  s = status
+  cl = clone
+  d = difftool
+  dno = diff --name-only
+  dcw = diff --color-words
+  m  = merge
+  mt = mergetool
+  bl = blame -n --color-lines
+  cge = config --global --edit
+  cfdxn = clean -fdxn
+  cfdx = clean -fdx
+
+  st = stash
+  stp = stash pop
+  std = stash drop
+  stl = stash list
+
+[fetch]
+  prune = true
+
+[http]
+  cookiefile = ~/.gitcookies
